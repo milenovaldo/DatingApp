@@ -1,0 +1,12 @@
+<h4>Internal server error - refresh page!</h4>
+<ng-container *ngIf="error">
+    <h5 class="text-danger">ERROR: {{error.message}}</h5>
+    <p class="font-weight-bold">What to do?</p>
+    <ol>
+        <li>Check Dev Tools</li>
+        <li>Inspect network and console</li>
+        <li>Check requests</li>
+    </ol>
+    <p>Stack trace</p>
+    <code class="mt-5" style="background-color: whitesmoke">{{error}}</code> 
+</ng-container>
